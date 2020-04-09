@@ -5,6 +5,6 @@
   "fields": [
     {"name": "node_id", "type":  "long"},
     {"name": "value", "type":  "int"},
-    {"name":  "window_start", "type": "long"}
+    {"name":  "timestamp", "type": "long"}
   ]
 }
