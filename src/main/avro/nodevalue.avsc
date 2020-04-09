@@ -1,0 +1,10 @@
+{
+  "namespace": "avro",
+  "type": "record",
+  "name": "NodeValue",
+  "fields": [
+    {"name": "node_id", "type":  "long"},
+    {"name": "value", "type":  "int"},
+    {"name":  "timestamp", "type": "long"}
+  ]
+}
