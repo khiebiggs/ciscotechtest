@@ -74,3 +74,4 @@ I've made a few assumptions while writing this, namely:
 * There is no way to publish to kafka topics via this program - it is simply a processor and consumer
 * Given more time, I would have written a REST api to add items to the stream, or view the current state of the DB
 * I would have written tests, but was very low on time as I had to study kafka beforehand
+* This code assumes that all messages to the Kafka Queue are correct, and not malformed - if I had more time, I would have added error handling
