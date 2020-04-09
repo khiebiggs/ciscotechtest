@@ -40,7 +40,7 @@ After you have built the program, you can run it with the following command from
 
 ## Writing and reading messages from the stream
 
-To publish messages to the stream, you can use `kafka-console-producer`, from the root directory:
+To publish messages to the stream, you can use `kafka-avro-console-producer`, from the root directory:
 
 `docker exec -i schema-registry /usr/bin/kafka-avro-console-producer --topic node-value-input --broker-list broker:9092 --property value.schema="$(< src/main/avro/nodevalue.avsc)"`
 
