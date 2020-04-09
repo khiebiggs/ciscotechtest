@@ -13,9 +13,9 @@ public class Average implements Serializable {
 
     }
 
-    public Average(long node_id, long timestamp, int min_value, int max_value, int average_value){
+    public Average(long node_id, long window_start, int min_value, int max_value, int average_value){
         this.node_id = node_id;
-        this.timestamp = timestamp;
+        this.window_start = window_start;
         this.min_value = min_value;
         this.max_value = max_value;
         this.average_value = average_value;
@@ -26,7 +26,7 @@ public class Average implements Serializable {
     private String event_id;
 
     private long node_id;
-    private long timestamp;
+    private long window_start;
     private int min_value;
     private int max_value;
     private int average_value;
@@ -47,12 +47,12 @@ public class Average implements Serializable {
         this.event_id = event_id;
     }
 
-    public long getTimestamp() {
-        return timestamp;
+    public long getWindow_start() {
+        return window_start;
     }
 
-    public void setTimestamp(long timestamp) {
-        this.timestamp = timestamp;
+    public void setWindow_start(long window_start) {
+        this.window_start = window_start;
     }
 
     public int getMin_value() {
